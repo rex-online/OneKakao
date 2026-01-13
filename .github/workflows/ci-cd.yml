@@ -68,7 +68,7 @@ jobs:
           script: |
             cd /home/${{ secrets.AWS_EC2_USER }}/onekakao
             docker pull ${{ secrets.DOCKER_USERNAME }}/onekakao:latest
-            docker compose -f docker-compose.prod.yml up -d
+            docker-compose -f docker-compose.prod.yml up -d
 
       - name: Wait for application to be ready
         uses: appleboy/ssh-action@v0.1.7
