@@ -36,7 +36,7 @@ Spring Boot REST API backend for the OneKakao project.
 3. **Access the application**
    - Root: http://localhost:8080 (redirects to Swagger UI)
    - API: http://localhost:8080/api
-   - Health Check: http://localhost:8080/api/health
+   - Health Check: http://localhost:8080
    - Swagger UI: http://localhost:8080/api/swagger-ui/index.html
    - H2 Console: http://localhost:8080/h2-console
      - JDBC URL: `jdbc:h2:mem:testdb`
@@ -147,8 +147,7 @@ CI/CD pipelines are configured for GitHub Actions:
 
 ## Available Endpoints
 
-- `GET /` - Root (redirects to Swagger UI)
-- `GET /api/health` - Health check endpoint
+- `GET /` - Health check endpoint
 - `GET /api/swagger-ui/index.html` - Swagger UI (dev only)
 - `GET /api/docs` - OpenAPI specification
 - `GET /h2-console` - H2 database console (dev only)
